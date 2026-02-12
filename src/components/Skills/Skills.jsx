@@ -117,7 +117,6 @@ export default function Skills() {
                     {activeTab === 'tools' && <TabContent key="tools" techs={tools} />}
                 </div>
             </div>
-            <AnimatedButton></AnimatedButton>
         </section>
     );
 }
