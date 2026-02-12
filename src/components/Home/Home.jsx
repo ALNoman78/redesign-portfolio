@@ -7,14 +7,18 @@ import Skills from '../Skills/Skills';
 
 const Home = () => {
     return (
-        <div className='max-w-7xl mx-auto'>
-            <Navbar></Navbar>
-            <Hero></Hero>
-            <About></About>
+        <>
+            <div className='max-w-7xl mx-auto'>
+                <Navbar></Navbar>
+                <Hero></Hero>
+                <About></About>
+            </div>
             <Skills></Skills>
-            <Contact></Contact>
-            <Footer></Footer>
-        </div>
+            <div className='max-w-7xl mx-auto'>
+                <Contact></Contact>
+                <Footer></Footer>
+            </div>
+        </>
     );
 };
 

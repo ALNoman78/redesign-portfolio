@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import AnimatedButton from '../Button/Button';
 
 const TechCard = ({ tech, index }) => (
     <div
@@ -76,19 +77,19 @@ export default function Skills() {
     ];
 
     return (
-        <section id="skills" className="py-24 w-full px-4 md:px-0 relative overflow-hidden bg-[#0a0a0a]">
+        <section id="skills" className="relative md:py-12 lg:py-24 mb-10 w-[100%] bg-[#0a0a0a]">
             {/* Background Elements - Enhanced */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-blue-600/20 rounded-full blur-[100px] animate-pulse"></div>
                 <div className="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-purple-600/20 rounded-full blur-[100px] animate-pulse delay-1000"></div>
             </div>
 
-            <div className="max-w-7xl mx-auto relative z-10">
+            <div className="max-w-7xl mx-auto md:px-8 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 mb-6">
-                        My Tech Stack
+                    <h2 className="text-4xl md:text-5xl leading-[1.2] md:w-[500px] mx-auto font-medium bg-clip-text text-white bg-gradient-to-r from-white to-gray-400 mb-6">
+                        Exploring the Tools Behind My Designs
                     </h2>
-                    <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-gray-400 md:w-[600px] mx-auto text-lg max-w-2xl mx-auto leading-relaxed">
                         A curated collection of technologies I use to build performant and scalable applications.
                     </p>
                 </div>
@@ -116,6 +117,7 @@ export default function Skills() {
                     {activeTab === 'tools' && <TabContent key="tools" techs={tools} />}
                 </div>
             </div>
+            <AnimatedButton></AnimatedButton>
         </section>
     );
 }
