@@ -4,6 +4,7 @@ import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import Skills from '../Skills/Skills';
+import Projects from '../Projects/Projects';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             </div>
             <Skills></Skills>
             <div className='max-w-7xl mx-auto'>
+                <Projects></Projects>
                 <Contact></Contact>
                 <Footer></Footer>
             </div>
